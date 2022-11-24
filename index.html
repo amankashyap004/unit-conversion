@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Conversion</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+  </head>
+  <body>
+    <main class="main-body">
+      <section class="home">
+        <div class="heading">
+          <h2 class="main-heading">Metric/Imperial Unit Conversion</h2>
+        </div>
+        <div class="input-container">
+          <input type="text" class="input-box" onfocus="this.value=''" value="1" id="input-value"/>
+        </div>
+        <div class="btn-container">
+          <button type="submit" class="btn" id="convert-btn" >Convert</button>
+        </div>
+      </section>
+      <section class="container">
+        <div class="continent-box">
+          <div class="continent-heading">
+            <h3 class="sub-heading">Length (Meter/Feet)</h3>
+          </div>
+          <div class="container-paragraph">
+            <p class="paragraph" class="user-input" id="meter-to-feet">1 meter = 3.280 feet</p>
+            <p class="paragraph hidden">|</p>
+            <p class="paragraph" class="user-input" id="feet-to-meter">1 feet = 0.304 meters</p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="continent-box">
+          <div class="continent-heading">
+            <h3 class="sub-heading">Volume (Liters/Gallons)</h3>
+          </div>
+          <div class="container-paragraph">
+            <p class="paragraph" id="liter-to-gallon">1 liter = 0.264 gallons</p>
+            <p class="paragraph hidden">|</p>
+            <p class="paragraph" id="gallon-to-liter">1 gallon = 3.785 liters</p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="continent-box">
+          <div class="continent-heading">
+            <h3 class="sub-heading">Mass (Kilograms/Pounds)</h3>
+          </div>
+          <div class="container-paragraph">
+            <p class="paragraph" id="kilogram-to-pound">1 kilo = 2.204 pounds</p>
+            <p class="paragraph hidden">|</p>
+            <p class="paragraph" id="pound-to-kilogram">1 pound = 0.453 kilos</p>
+          </div>
+        </div>
+      </section>
+      <section class="dark-mode">
+         <div class="dark-mode-btn" id="toggle-btn">
+            <i class="fa-solid fa-moon"></i>
+         </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
